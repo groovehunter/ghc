@@ -1,0 +1,35 @@
+name = GHC
+core = 7.x
+description = community work and live install profile
+
+; Core
+dependencies[] = book
+dependencies[] = block
+dependencies[] = dblog
+dependencies[] = field_ui
+dependencies[] = file
+dependencies[] = locale
+dependencies[] = menu
+dependencies[] = number
+dependencies[] = path
+dependencies[] = taxonomy
+
+; Contrib
+dependencies[] = admin_menu
+
+;dependencies[] = admin_views
+dependencies[] = calendar
+dependencies[] = context
+dependencies[] = context_ui
+dependencies[] = ctools
+dependencies[] = date
+dependencies[] = devel
+dependencies[] = dhtml_menu
+dependencies[] = features
+dependencies[] = media
+dependencies[] = module_filter
+dependencies[] = simplewiki
+dependencies[] = views
+dependencies[] = views_ui
+
+
