@@ -14,7 +14,6 @@ projects[calendar][version] = "3.4"
 projects[context][version] = "3.1"
 projects[ctools][version] = "1.3"
 projects[date][version] = "2.7"
-projects[devel][version] = "1.3"
 projects[dhtml_menu][version] = "1.0-beta1"
 projects[entity][version] = "1.3"
 projects[entityreference][version] = "1.0"
@@ -34,6 +33,7 @@ projects[views][version] = "3.7"
 projects[views_bulk_operations][version] = "3.1"
 
 
-
+; DEVEL modules
+projects[devel][version] = "1.3"
 
 ; Themes

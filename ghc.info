@@ -23,7 +23,6 @@ dependencies[] = context
 dependencies[] = context_ui
 dependencies[] = ctools
 dependencies[] = date
-dependencies[] = devel
 dependencies[] = dhtml_menu
 dependencies[] = features
 dependencies[] = fe_block
@@ -37,4 +36,7 @@ dependencies[] = views
 dependencies[] = views_bulk_operations
 dependencies[] = views_ui
 
-
+; devel 
+dependencies[] = devel
+dependencies[] = devel_generate
+dependencies[] = devel_node_access
