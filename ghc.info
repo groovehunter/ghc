@@ -23,7 +23,6 @@ dependencies[] = context
 dependencies[] = context_ui
 dependencies[] = ctools
 dependencies[] = date
-dependencies[] = devel
 dependencies[] = dhtml_menu
 dependencies[] = features
 dependencies[] = fe_block
