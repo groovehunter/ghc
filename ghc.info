@@ -26,10 +26,15 @@ dependencies[] = date
 dependencies[] = devel
 dependencies[] = dhtml_menu
 dependencies[] = features
+dependencies[] = fe_block
 dependencies[] = media
+dependencies[] = mediafield
+dependencies[] = media_internet
 dependencies[] = module_filter
 dependencies[] = simplewiki
+dependencies[] = taxonomy_manager
 dependencies[] = views
+dependencies[] = views_bulk_operations
 dependencies[] = views_ui
 
 
