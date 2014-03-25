@@ -24,16 +24,27 @@ dependencies[] = context_ui
 dependencies[] = ctools
 dependencies[] = date
 dependencies[] = dhtml_menu
+dependencies[] = entity
+dependencies[] = entityreference
+dependencies[] = entity_view_mode
 dependencies[] = features
 dependencies[] = fe_block
+dependencies[] = libraries
+dependencies[] = imce
 dependencies[] = media
 dependencies[] = mediafield
 dependencies[] = media_internet
+dependencies[] = media_browser_plus
 dependencies[] = module_filter
+dependencies[] = plupload
 dependencies[] = simplewiki
+dependencies[] = strongarm
 dependencies[] = taxonomy_manager
+dependencies[] = taxonomy_menu
 dependencies[] = views
 dependencies[] = views_bulk_operations
 dependencies[] = views_ui
+dependencies[] = wysiwyg
 
-
+; dev
+; dependencies[] = user_import
