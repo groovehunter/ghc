@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the ghc_struktur feature.
+ */
+
+include_once 'ghc_struktur.features.inc';
