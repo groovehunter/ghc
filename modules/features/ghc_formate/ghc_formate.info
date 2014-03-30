@@ -1,0 +1,11 @@
+name = ghc_formate
+description = Textformate und evtl. anderes
+core = 7.x
+package = ghc
+version = 7.x-1.0
+project = ghc_formate
+dependencies[] = features
+dependencies[] = filter
+dependencies[] = simplewiki
+features[features_api][] = api:1
+features[filter][] = wiki_formattierung
