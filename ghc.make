@@ -31,6 +31,11 @@ projects[user_import][version] = "2.2"
 projects[views][version] = "3.7"
 projects[views_bulk_operations][version] = "3.1"
 
+; my stuff
+projects[openspirit_basic_features][type] = "module"
+projects[openspirit_basic_features][subdir] = features
+projects[openspirit_basic_features][download][type] = "git"
+projects[openspirit_basic_features][download][url] = "https://github.com/groovehunter/openspirit_basic_features.git"
 
 
 ; Themes
