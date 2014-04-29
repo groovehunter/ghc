@@ -30,7 +30,6 @@ dependencies[] = fe_block
 dependencies[] = libraries
 dependencies[] = rules
 dependencies[] = rules_admin
-dependencies[] = simplewiki
 dependencies[] = strongarm
 dependencies[] = taxonomy_manager
 dependencies[] = taxonomy_menu
