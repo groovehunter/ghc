@@ -32,7 +32,7 @@ projects[views][version] = "3.7"
 projects[views_bulk_operations][version] = "3.1"
 
 ; calendars
-projects[availability_calendar][version] ="5.1"
+projects[availability_calendars][version] = "5.1"
 projects[calendar][version] = "3.4"
 projects[calendar_block][version] = "3.x-dev"
 projects[events_calendar_feature][version] = "1.0"
