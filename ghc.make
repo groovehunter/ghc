@@ -36,6 +36,7 @@ projects[availability_calendars][version] = "5.1"
 projects[calendar][version] = "3.4"
 projects[calendar_block][version] = "3.x-dev"
 projects[events_calendar_feature][version] = "1.0"
+projects[fullcalendar][version] = "2.0"
 projects[jquery_calendar][version] = "1.0-beta1"
 
 ; my stuff
