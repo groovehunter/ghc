@@ -18,7 +18,6 @@ dependencies[] = taxonomy
 dependencies[] = admin_menu
 
 dependencies[] = admin_views
-dependencies[] = calendar
 dependencies[] = ctools
 dependencies[] = date
 dependencies[] = date_popup
@@ -37,4 +36,11 @@ dependencies[] = views
 dependencies[] = views_bulk_operations
 dependencies[] = views_ui
 
+
+;dependencies[] = availability_calendar
+dependencies[] = calendar
+dependencies[] = calendar_block
+;dependencies[] = event_calendar
+;dependencies[] = fullcalendar
+;dependencies[] = jquery_calendar
 
