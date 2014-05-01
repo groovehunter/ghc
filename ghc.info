@@ -38,9 +38,9 @@ dependencies[] = views_ui
 
 
 ;dependencies[] = availability_calendar
-dependencies[] = calendar
-dependencies[] = calendar_block
+;dependencies[] = calendar
+;dependencies[] = calendar_block
 ;dependencies[] = event_calendar
-;dependencies[] = fullcalendar
+dependencies[] = fullcalendar
 ;dependencies[] = jquery_calendar
 
