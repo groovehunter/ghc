@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the schichtplan_content feature.
+ */
+
+include_once 'schichtplan_content.features.inc';

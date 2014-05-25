@@ -1,0 +1,10 @@
+name = ghc_container
+description = container-taxonomy
+core = 7.x
+package = ghc
+version = 7.x-1.0
+project = ghc_container
+dependencies[] = features
+dependencies[] = taxonomy
+features[features_api][] = api:1
+features[taxonomy][] = container
