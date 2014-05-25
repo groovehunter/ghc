@@ -55,6 +55,10 @@ projects[openspirit_basic_features][subdir] = features
 projects[openspirit_basic_features][download][type] = "git"
 projects[openspirit_basic_features][download][url] = "https://github.com/groovehunter/openspirit_basic_features.git"
 
+projects[ghc_features][type] = "module"
+projects[ghc_features][subdir] = features
+projects[ghc_features][download][type] = "git"
+projects[ghc_features][download][url] = "file:///srv/projectstuff/gitlocal/ghc_features"
 
 ; Themes
 projects[liquid_coolness][version] = "1.0"
