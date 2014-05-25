@@ -4,9 +4,11 @@ description = community work and live install profile
 
 ; Core
 dependencies[] = block
+dependencies[] = comment
 dependencies[] = dblog
 dependencies[] = field_ui
 dependencies[] = file
+dependencies[] = forum
 dependencies[] = list
 dependencies[] = locale
 dependencies[] = menu
