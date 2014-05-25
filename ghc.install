@@ -5,11 +5,9 @@
  */
 
 function ghc_install() {
-//  theme_enable(array('rubik'));
-//  variable_set('theme_default', 'rubik');
 
   // Enable some standard blocks.
-  $default_theme = variable_get('theme_default', 'bartik');
+  $default_theme = variable_get('theme_default', 'liquid_coolness');
   $admin_theme = 'seven';
   $blocks = array(
     array(
