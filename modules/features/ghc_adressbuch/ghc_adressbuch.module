@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the ghc_adressbuch feature.
+ */
+
+include_once 'ghc_adressbuch.features.inc';
