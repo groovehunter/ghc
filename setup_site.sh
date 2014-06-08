@@ -104,8 +104,8 @@ cd $INSTALL_DIR
 
 
 ### user, roles, ldap
-echo "drush create roles..."
-#drush scr $DRUPAL_ROOT/profiles/$distro_name/modules/distro_name/config/create_roles.script drupal_roles_dev create
+#echo "drush create roles..."
+#drush scr $DRUPAL_ROOT/profiles/$distro_name/config/create_roles.script drupal_roles_dev create
 
 cd $DRUPAL_ROOT/profiles/$site_distro/modules/contrib
 # clone l10n_update dev version
@@ -114,6 +114,8 @@ cd $DRUPAL_ROOT/profiles/$site_distro/modules/contrib
 echo "change directory to install folder $INSTALL_DIR"
 cd $INSTALL_DIR
 
+# import taxonomy
+#  
 
 
 ### sonstiges
@@ -124,6 +126,11 @@ drush vset configurable_timezones 0
 drush vset date_default_timezone "Europe/Berlin"
 drush vset user_default_timezone: "0"
 drush vset date_first_day "1"
+
+
+drush vset file_private_path: "sites/default/files/private"
+drush vset file_public_path: "sites/default/files"
+drush vset file_temporary_path: "/tmp"
 
 
 
