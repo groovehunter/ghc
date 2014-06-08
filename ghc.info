@@ -40,6 +40,7 @@ dependencies[] = phone
 dependencies[] = profile2
 dependencies[] = rules
 dependencies[] = rules_admin
+dependencies[] = skinr
 dependencies[] = strongarm
 dependencies[] = taxonomy_manager
 dependencies[] = taxonomy_menu
