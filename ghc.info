@@ -45,6 +45,7 @@ dependencies[] = strongarm
 dependencies[] = taxonomy_manager
 dependencies[] = taxonomy_menu
 dependencies[] = unique_field
+dependencies[] = user_import
 dependencies[] = views
 dependencies[] = views_bulk_operations
 dependencies[] = views_ui
