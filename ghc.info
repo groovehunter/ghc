@@ -17,8 +17,10 @@ dependencies[] = path
 dependencies[] = taxonomy
 
 ; Contrib
-dependencies[] = admin_menu
+dependencies[] = devel
+dependencies[] = devel_generate
 
+dependencies[] = admin_menu
 dependencies[] = admin_views
 dependencies[] = addressfield
 dependencies[] = advanced_help
@@ -26,7 +28,12 @@ dependencies[] = auto_entitylabel
 dependencies[] = computed_field
 dependencies[] = ctools
 dependencies[] = date
+dependencies[] = date_all_day
 dependencies[] = date_popup
+dependencies[] = date_repeat_field
+dependencies[] = date_repeat
+dependencies[] = date_tools
+
 dependencies[] = dhtml_menu
 dependencies[] = edit
 dependencies[] = email
@@ -41,9 +48,11 @@ dependencies[] = profile2
 dependencies[] = rules
 dependencies[] = rules_admin
 dependencies[] = skinr
+dependencies[] = skinr_ui
 dependencies[] = strongarm
 dependencies[] = taxonomy_manager
 dependencies[] = taxonomy_menu
+dependencies[] = token
 dependencies[] = unique_field
 dependencies[] = user_import
 dependencies[] = views

@@ -35,17 +35,15 @@ then
   SITE=$site_prod
   DB="prod"
 else
-  SITE="$site_base-$1.$site_tld"
+  SITE="$site_base-$1"
   DB="$1"
 fi
 
 echo "Setting up $SITE \n"
 
-
-DRUPAL_ROOT=/var/www/vhosts/$SITE
+site_name=$SITE
+DRUPAL_ROOT=/var/www/projects/$SITE
 INSTALL_DIR=$DRUPAL_ROOT/sites/default
-export DRUPAL_ROOT
-export INSTALL_DIR
 
 if ! [[ -d $DRUPAL_ROOT ]]
 then
@@ -75,7 +73,8 @@ fi
 echo $?
 #exit
 
-echo "\ninstall drupal instance..."
+echo
+echo "install drupal instance..."
 #drush si $distro_name --db-url="mysql://drupal:$passwd@localhost/drupal_$site_name_$DB" -y
 drush si $distro_name --db-url="mysql://drupal:$passwd@localhost/drupal_$site_name_$DB" -y
 # OK?
@@ -94,9 +93,8 @@ git clone "https://github.com/groovehunter/openspirit_basic_features.git"
 
 # if there is another custom module:
 cd $DRUPAL_ROOT/profiles/$distro_name/modules
-mkdir $site_name
-cd $site_name
-echo "get custom modules via git clone..."
+
+#echo "get custom modules via git clone..."
 # outcomment here
 
 echo "change directory to install folder $INSTALL_DIR"
@@ -107,7 +105,7 @@ cd $INSTALL_DIR
 #echo "drush create roles..."
 #drush scr $DRUPAL_ROOT/profiles/$distro_name/config/create_roles.script drupal_roles_dev create
 
-cd $DRUPAL_ROOT/profiles/$site_distro/modules/contrib
+cd $DRUPAL_ROOT/profiles/$distro_name/modules/contrib
 # clone l10n_update dev version
 # git clone --recursive --branch 7.x-1.x http://git.drupal.org/project/l10n_update.git
 # clone taxonomy_csv with fixed issue https://drupal.org/node/1475952
@@ -124,24 +122,35 @@ drush vset site_name "$site_name"
 drush vset site_default_country de
 drush vset configurable_timezones 0
 drush vset date_default_timezone "Europe/Berlin"
-drush vset user_default_timezone: "0"
+drush vset user_default_timezone "0"
 drush vset date_first_day "1"
+drush vset calendar_track_date "2"
 
 
-drush vset file_private_path: "sites/default/files/private"
-drush vset file_public_path: "sites/default/files"
-drush vset file_temporary_path: "/tmp"
+drush vset file_private_path "sites/default/files/private"
+drush vset file_public_path "sites/default/files"
+drush vset file_temporary_path "/tmp"
 
-
+drush vset theme_default "liquid_coolness"
 
 # other vars
 echo "setting further variables..."
 drush vset date_format_short "d.m.Y"
 
 drush en l10n_update -y
+#drush language-add de fr es ru ar 
 drush language-add de
 drush language-default de
 drush l10n-update
+
+# enable ghc features
+drush en -y ghc_adressbuch 
+drush en -y ghc_container
+drush en -y ghc_struktur
+drush en -y schichtplan_content
+
+
+drush user-import /home/konnertz/projekte/GHC/hausnetz_bak/users_small.csv
 
 echo "FINISHED setup script. Check above for errors!"
 
