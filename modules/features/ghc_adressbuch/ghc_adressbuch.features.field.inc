@@ -56,7 +56,7 @@ function ghc_adressbuch_field_default_fields() {
             ),
           ),
           'type' => 'text_default',
-          'weight' => 0,
+          'weight' => '0',
         ),
         'teaser' => array(
           'label' => 'hidden',
@@ -139,7 +139,7 @@ function ghc_adressbuch_field_default_fields() {
             'use_widget_handlers' => 1,
           ),
           'type' => 'addressfield_default',
-          'weight' => 3,
+          'weight' => '3',
         ),
         'teaser' => array(
           'label' => 'above',
@@ -187,7 +187,7 @@ function ghc_adressbuch_field_default_fields() {
       'locked' => '0',
       'module' => 'email',
       'settings' => array(
-        'profile2_private' => FALSE,
+        'profile2_private' => 0,
       ),
       'translatable' => '0',
       'type' => 'email',
@@ -199,7 +199,7 @@ function ghc_adressbuch_field_default_fields() {
       'description' => '',
       'display' => array(
         'default' => array(
-          'label' => 'above',
+          'label' => 'inline',
           'module' => 'email',
           'settings' => array(
             'edit' => array(
@@ -207,7 +207,7 @@ function ghc_adressbuch_field_default_fields() {
             ),
           ),
           'type' => 'email_default',
-          'weight' => 1,
+          'weight' => '1',
         ),
         'teaser' => array(
           'label' => 'above',
@@ -261,7 +261,7 @@ function ghc_adressbuch_field_default_fields() {
       'description' => '',
       'display' => array(
         'default' => array(
-          'label' => 'above',
+          'label' => 'inline',
           'module' => 'phone',
           'settings' => array(
             'edit' => array(
@@ -269,7 +269,7 @@ function ghc_adressbuch_field_default_fields() {
             ),
           ),
           'type' => 'phone',
-          'weight' => 4,
+          'weight' => '4',
         ),
         'teaser' => array(
           'label' => 'above',
@@ -338,15 +338,15 @@ function ghc_adressbuch_field_default_fields() {
       'description' => '',
       'display' => array(
         'default' => array(
-          'label' => 'above',
+          'label' => 'inline',
           'module' => 'link',
           'settings' => array(
             'edit' => array(
               'editor' => 'form',
             ),
           ),
-          'type' => 'link_default',
-          'weight' => 2,
+          'type' => 'link_url',
+          'weight' => '2',
         ),
         'teaser' => array(
           'label' => 'above',
