@@ -38,6 +38,7 @@ dependencies[] = date_repeat
 dependencies[] = date_tools
 
 dependencies[] = dhtml_menu
+dependencies[] = diff
 dependencies[] = ds
 dependencies[] = ds_forms
 dependencies[] = ds_ui
