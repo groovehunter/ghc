@@ -151,6 +151,7 @@ drush l10n-update
 drush en -y ghc_adressbuch 
 drush en -y ghc_container
 drush en -y ghc_struktur
+drush en -y ghc_terminkalender
 # barschicht date field ist doublette zu event erstellt mit date tools
 #drush en -y schichtplan_content
 drush dis -y book

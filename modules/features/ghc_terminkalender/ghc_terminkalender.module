@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the ghc_terminkalender feature.
+ */
+
+include_once 'ghc_terminkalender.features.inc';
