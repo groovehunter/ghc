@@ -14,17 +14,20 @@ dependencies[] = locale
 dependencies[] = menu
 dependencies[] = number
 dependencies[] = path
+dependencies[] = search
 dependencies[] = taxonomy
 
 ; Contrib
 dependencies[] = devel
 dependencies[] = devel_generate
+dependencies[] = devel_node_access
 
 dependencies[] = admin_menu
 dependencies[] = admin_views
 dependencies[] = addressfield
 dependencies[] = advanced_help
 dependencies[] = auto_entitylabel
+dependencies[] = better_exposed_filters
 dependencies[] = computed_field
 dependencies[] = ctools
 dependencies[] = date
@@ -35,14 +38,24 @@ dependencies[] = date_repeat
 dependencies[] = date_tools
 
 dependencies[] = dhtml_menu
+dependencies[] = ds
+dependencies[] = ds_forms
+dependencies[] = ds_ui
+
 dependencies[] = edit
 dependencies[] = email
 dependencies[] = entity
 dependencies[] = entityreference
 dependencies[] = features
 dependencies[] = fe_block
+dependencies[] = lang_dropdown
+dependencies[] = lang_dropdown_hideout
 dependencies[] = libraries
 dependencies[] = link
+dependencies[] = migrate
+dependencies[] = migrate_ui
+dependencies[] = page_manager
+dependencies[] = panels
 dependencies[] = phone
 dependencies[] = profile2
 dependencies[] = rules
@@ -50,12 +63,15 @@ dependencies[] = rules_admin
 dependencies[] = skinr
 dependencies[] = skinr_ui
 dependencies[] = strongarm
+dependencies[] = tac_lite
+dependencies[] = taxonomy_csv
 dependencies[] = taxonomy_manager
 dependencies[] = taxonomy_menu
 dependencies[] = token
 dependencies[] = unique_field
 dependencies[] = user_import
 dependencies[] = views
+dependencies[] = views_block_filter_block
 dependencies[] = views_bulk_operations
 dependencies[] = views_ui
 
@@ -66,4 +82,9 @@ dependencies[] = calendar_block
 ;dependencies[] = event_calendar
 ;dependencies[] = fullcalendar
 ;dependencies[] = jquery_calendar
+
+
+; GHC
+; enable in setup script?
+;dependencies[] = migrate_ghc
 

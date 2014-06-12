@@ -21,7 +21,7 @@ contains() {
 }
 
 
-avail=("dev" "staging" "prod")
+avail=("aa" "dev" "staging" "prod" "s1" "s2")
 if contains "$1" "${avail[@]}"
 then 
   echo "$1 is defined."
@@ -104,6 +104,8 @@ cd $INSTALL_DIR
 ### user, roles, ldap
 #echo "drush create roles..."
 #drush scr $DRUPAL_ROOT/profiles/$distro_name/config/create_roles.script drupal_roles_dev create
+# todo
+#drush vocimp
 
 cd $DRUPAL_ROOT/profiles/$distro_name/modules/contrib
 # clone l10n_update dev version
@@ -132,6 +134,8 @@ drush vset file_public_path "sites/default/files"
 drush vset file_temporary_path "/tmp"
 
 drush vset theme_default "liquid_coolness"
+drush vset admin_menu_tweak_modules "1"
+drush vset admin_menu_tweak_permissions "1"
 
 # other vars
 echo "setting further variables..."
@@ -147,7 +151,9 @@ drush l10n-update
 drush en -y ghc_adressbuch 
 drush en -y ghc_container
 drush en -y ghc_struktur
-drush en -y schichtplan_content
+# barschicht date field ist doublette zu event erstellt mit date tools
+#drush en -y schichtplan_content
+drush dis -y book
 
 
 drush user-import /home/konnertz/projekte/GHC/hausnetz_bak/users_small.csv
