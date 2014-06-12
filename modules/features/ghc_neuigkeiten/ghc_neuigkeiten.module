@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the ghc_neuigkeiten feature.
+ */
+
+include_once 'ghc_neuigkeiten.features.inc';
