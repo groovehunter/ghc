@@ -42,7 +42,8 @@ fi
 echo "Setting up $SITE \n"
 
 site_name=$SITE
-DRUPAL_ROOT=/var/www/projects/$SITE
+DRUPAL_ROOT=`pwd`/$SITE
+#DRUPAL_ROOT=/var/www/projects/$SITE
 INSTALL_DIR=$DRUPAL_ROOT/sites/default
 
 if ! [[ -d $DRUPAL_ROOT ]]
