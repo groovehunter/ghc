@@ -74,6 +74,18 @@ function ghc_neuigkeiten_strongarm() {
       'rss' => array(
         'custom_settings' => FALSE,
       ),
+      'search_index' => array(
+        'custom_settings' => FALSE,
+      ),
+      'search_result' => array(
+        'custom_settings' => FALSE,
+      ),
+      'token' => array(
+        'custom_settings' => FALSE,
+      ),
+      'revision' => array(
+        'custom_settings' => FALSE,
+      ),
     ),
     'extra_fields' => array(
       'form' => array(
@@ -81,7 +93,18 @@ function ghc_neuigkeiten_strongarm() {
           'weight' => '-5',
         ),
       ),
-      'display' => array(),
+      'display' => array(
+        'flippy_pager' => array(
+          'teaser' => array(
+            'weight' => '0',
+            'visible' => FALSE,
+          ),
+          'default' => array(
+            'weight' => '0',
+            'visible' => TRUE,
+          ),
+        ),
+      ),
     ),
   );
   $export['field_bundle_settings_node__news_eintrag'] = $strongarm;
