@@ -1,0 +1,17 @@
+name = ghc_rechte_allgemein
+description = Allgemeine Rechte
+core = 7.x
+package = ghc
+php = 5.2.4
+version = 7.x-1.1
+project = ghc_rechte_allgemein
+dependencies[] = features
+features[features_api][] = api:1
+features[user_permission][] = access content
+features[user_permission][] = delete revisions
+features[user_permission][] = revert revisions
+features[user_permission][] = view own unpublished content
+features[user_permission][] = view revisions
+features[user_role][] = externe-person
+features[user_role][] = hotelier
+features[user_role][] = superuser

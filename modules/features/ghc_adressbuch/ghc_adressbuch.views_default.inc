@@ -76,6 +76,12 @@ function ghc_adressbuch_views_default_views() {
       'empty_column' => 0,
     ),
   );
+  /* Header: Global: Unfiltered text */
+  $handler->display->display_options['header']['area_text_custom']['id'] = 'area_text_custom';
+  $handler->display->display_options['header']['area_text_custom']['table'] = 'views';
+  $handler->display->display_options['header']['area_text_custom']['field'] = 'area_text_custom';
+  $handler->display->display_options['header']['area_text_custom']['empty'] = TRUE;
+  $handler->display->display_options['header']['area_text_custom']['content'] = '<a href="node/add/kontakt">Eintrag hinzufügen</a>';
   /* Field: Content: Title */
   $handler->display->display_options['fields']['title']['id'] = 'title';
   $handler->display->display_options['fields']['title']['table'] = 'node';
@@ -98,7 +104,7 @@ function ghc_adressbuch_views_default_views() {
       'address' => 'address',
     ),
   );
-  /* Field: Content: Email */
+  /* Field: Field: Email */
   $handler->display->display_options['fields']['field_email']['id'] = 'field_email';
   $handler->display->display_options['fields']['field_email']['table'] = 'field_data_field_email';
   $handler->display->display_options['fields']['field_email']['field'] = 'field_email';
@@ -148,6 +154,7 @@ function ghc_adressbuch_views_default_views() {
     t('‹ previous'),
     t('next ›'),
     t('last »'),
+    t('<a href="node/add/kontakt">Eintrag hinzufügen</a>'),
     t('Title'),
     t('Website'),
     t('Adresse'),

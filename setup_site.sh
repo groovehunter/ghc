@@ -144,15 +144,16 @@ drush vset date_format_short "d.m.Y"
 
 drush en l10n_update -y
 #drush language-add de fr es ru ar 
-drush language-add de
-drush language-default de
-drush l10n-update
+#drush language-add de
+#drush language-default de
+#drush l10n-update
 
 # enable ghc features
 drush en -y ghc_adressbuch 
 drush en -y ghc_container
 drush en -y ghc_struktur
 drush en -y ghc_terminkalender
+drush en -y ghc_neuigkeiten
 # barschicht date field ist doublette zu event erstellt mit date tools
 #drush en -y schichtplan_content
 drush dis -y book
